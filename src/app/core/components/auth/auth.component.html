@@ -1,0 +1,19 @@
+<div class="contain">
+  <section class="login-container container mx-4">
+
+    <section class="login-info">
+      <img class="login-info__logo mb-8 mx-auto" width="160" height="127" ngSrc="assets/images/nav/logo.svg" />
+
+      <h2 class="login-info__title text-nav-black mb-4">{{ currentPage?.title | translate}}</h2>
+      <p class="login-info__subtitle">{{ currentPage?.subTitle | translate}}</p>
+
+      <section class="dynamic-part w-full sm:w-[80%]">
+        <router-outlet></router-outlet>
+      </section>
+    </section>
+
+    <section class="login-image">
+      <img ngSrc="assets/images/auth/bg-cover.png" width="686" height="960" priority />
+    </section>
+  </section>
+</div>

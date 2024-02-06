@@ -1,0 +1,29 @@
+<form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+
+  <app-general-input type="text" formControlName="email" [label]="'auth.email' | translate"
+    placeholder="email@domain.com" icon="assets/images/auth/icons/user.svg" [errors]="getControlErrors('email')"
+    [isSubmitted]="isSubmitted"></app-general-input>
+
+  <app-general-input type="password" formControlName="password" [label]="'auth.password' | translate"
+    [placeholder]="'auth.write_here' | translate" icon="assets/images/auth/icons/lock.svg"
+    [errors]="getControlErrors('password')" [isSubmitted]="isSubmitted"></app-general-input>
+
+  <app-general-input type="password" formControlName="confirm_password"
+    [label]="'auth.sign_up.confirm_password' | translate" [placeholder]="'auth.write_here' | translate"
+    icon="assets/images/auth/icons/lock.svg" [errors]="getControlErrors('password')"
+    [isSubmitted]="isSubmitted"></app-general-input>
+
+
+  <app-auth-button class="mx-auto mt-4" type="submit"
+    [title]="'auth.sign_up.create_new_account' | translate">
+  </app-auth-button>
+
+  <div class="dont-have-account">
+    <p>{{'auth.sign_up.have_account' | translate}}</p>
+
+    <app-auth-button routerLink="/auth/login" class="mx-auto create-account-btn" type="button" [title]="'auth.sign_up.sign_in' | translate">
+    </app-auth-button>
+
+  </div>
+
+</form>

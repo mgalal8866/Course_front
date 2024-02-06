@@ -1,0 +1,11 @@
+<section class="my-24 flex items-center flex-col md:flex-row gap-8">
+    <div class="w-full md:w-[50%]">
+        <img class="mx-auto" [ngSrc]="welcomeData?.image || 'assets'" width="454" height="488" />
+    </div>
+    <div class="w-full md:w-[50%]">
+        <h3 class="text-3xl md:text-5xl font-bold">{{welcomeData?.title}}</h3>
+        <p class="my-6 text-base">{{welcomeData?.body}}</p>
+        <app-secondary-button [title]="'buttons.start_free' | translate"></app-secondary-button>
+
+    </div>
+</section>

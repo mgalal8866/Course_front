@@ -1,0 +1,91 @@
+<section class="pb-4 text-black footer">
+    <div class="container mx-auto">
+        <div class="grid mx-4 md:p-0 grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
+            <div class="lg:col-span-2">
+                <img class="max-w-[100%]" width="105" height="84" ngSrc="assets/images/nav/logo.svg" />
+                <p class="my-4">
+                    {{footerData?.description}}
+                </p>
+
+                <section class="flex items-center gap-4 ">
+                    <img src="assets/images/footer/youtube.svg" />
+                    <img src="assets/images/footer/linkedin.svg" />
+                    <img src="assets/images/footer/twitter.svg" />
+                    <img src="assets/images/footer/facebook.svg" />
+                </section>
+            </div>
+
+            <section>
+                <p class="text-secondary  mt-0 text-xl font-bold mb-2">{{ 'footer.about_platform' | translate }}</p>
+                <a class="text-base text-black mb-2 text-sm cursor-pointer block no-underline">
+                    {{ 'footer.about_us' | translate }}
+                </a>
+
+                <a class="text-base text-black mb-2 text-sm cursor-pointer block no-underline">
+                    {{ 'footer.team_work' | translate }}
+                </a>
+
+                <a class="text-base text-black mb-2 text-sm cursor-pointer block no-underline">
+                    {{ 'footer.common_questions' | translate }}
+                </a>
+
+                <a class="text-base text-black mb-2 text-sm cursor-pointer block no-underline">
+                    {{ 'footer.usage_privacy' | translate }}
+                </a>
+
+                <a class="text-base text-black mb-2 text-sm cursor-pointer block no-underline">
+                    {{ 'footer.blog' | translate }}
+                </a>
+                <a class="text-base text-black mb-2 text-sm cursor-pointer block no-underline">
+                    {{ 'footer.contact_us' | translate }}
+                </a>
+            </section>
+
+            <div>
+                <p class="text-secondary  mt-0 text-xl font-bold mb-2">{{ 'footer.fast_links' | translate }}</p>
+                <a class="text-base text-black mb-2 text-sm cursor-pointer block no-underline">
+                    {{ 'footer.about_us' | translate }}
+                </a>
+
+                <a class="text-base text-black mb-2 text-sm cursor-pointer block no-underline">
+                    {{ 'footer.team_work' | translate }}
+                </a>
+
+                <a class="text-base text-black mb-2 text-sm cursor-pointer block no-underline">
+                    {{ 'footer.common_questions' | translate }}
+                </a>
+
+                <a class="text-base text-black mb-2 text-sm cursor-pointer block no-underline">
+                    {{ 'footer.usage_privacy' | translate }}
+                </a>
+
+                <a class="text-base text-black mb-2 text-sm cursor-pointer block no-underline">
+                    {{ 'footer.blog' | translate }}
+                </a>
+                <a class="text-base text-black mb-2 text-sm cursor-pointer block no-underline">
+                    {{ 'footer.contact_us' | translate }}
+                </a>
+            </div>
+
+            <div>
+                <p class="text-secondary  mt-0 text-xl font-bold mb-2">{{ 'footer.contact_us' | translate }}</p>
+
+                <a class="text-base text-black mb-2 text-sm cursor-pointer block no-underline">
+                    {{footerData?.phone}}
+                </a>
+
+                <a class="text-base text-black mb-2 text-sm cursor-pointer block no-underline">
+                    {{footerData?.mail}}
+                </a>
+
+                <a class="text-base text-black mb-2 text-sm cursor-pointer block no-underline">
+                    {{'footer.address' | translate}}: {{footerData?.address}}
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section class="flex items-center justify-center mt-6 text-black text-base">
+        {{footerData?.copyright}}
+    </section>
+</section>

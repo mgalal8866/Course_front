@@ -1,0 +1,59 @@
+@import '../../../../assets/scss/variables';
+
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #F2F5F9;
+  backdrop-filter: blur(4px);
+  height: 80px;
+  padding: 0;
+}
+
+.toggle {
+  color: $primary-color;
+}
+
+::ng-deep {
+
+  .mat-drawer-content{
+    overflow-x: hidden !important;
+  }
+
+  .mat-mdc-menu-trigger {
+    padding: 8px 0 !important;
+    color: $primary-color !important;
+
+    &:hover {
+      background: transparent !important;
+
+      .mat-mdc-button-persistent-ripple::before {
+        background: none;
+      }
+    }
+
+    .mdc-button__label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: $nav-black;
+    }
+  }
+}
+
+.nav-item.active {
+  color: $primary-color;
+  border-bottom: 1px solid $primary-color;
+}

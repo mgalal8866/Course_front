@@ -1,0 +1,41 @@
+@import "../../../../../assets/scss/variables";
+
+.title {
+    color: #111322;
+}
+
+.sub-title {
+    color: #4a5578;
+}
+
+::ng-deep {
+    .mat-expansion-panel {
+        background-color: transparent;
+        cursor: pointer !important;
+        background: #faf9f4;
+    }
+
+    .mat-expansion-panel-header {
+        padding: 36px !important;
+        height: 72px;
+    }
+
+    .mat-expansion-panel:not([class*="mat-elevation-z"]) {
+        box-shadow: 2px 4px 40px 0px rgba(25, 69, 142, 0.12) !important;
+        border-radius: 0 !important;
+    }
+
+    // .mat-expansion-indicator::after {
+    //     display: none !important;
+    // }
+    .mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:not([aria-disabled=true]):hover{
+        background-color: white !important;
+    }
+}
+
+.mat-accordion .mat-expansion-panel:not(.mat-expanded),
+.mat-accordion .mat-expansion-panel:not(.mat-expansion-panel-spacing) {
+    border-radius: 12px !important;
+    min-height: 70px;
+    height: auto;
+}

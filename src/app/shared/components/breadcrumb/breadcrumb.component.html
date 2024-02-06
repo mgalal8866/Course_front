@@ -1,0 +1,9 @@
+<xng-breadcrumb [autoGenerate]="false" [separator]="iconTemplate" class="breadcrumb">
+  <ng-container *xngBreadcrumbItem="let breadcrumb">
+    <p [routerLink]="breadcrumb.url">{{breadcrumb | translate}}</p>
+</ng-container>
+</xng-breadcrumb>
+
+<ng-template #iconTemplate>
+  <img ngSrc="assets/images/general/breadcrumb-icon.svg" width="5.8" height="9.3" />
+</ng-template>

@@ -1,0 +1,16 @@
+@import '../../../../../../assets/scss/variables';
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    border: 1px solid $secondary-color;
+    width: 130px;
+    height: 63px;
+}
+
+img {
+    width: 100%;
+}

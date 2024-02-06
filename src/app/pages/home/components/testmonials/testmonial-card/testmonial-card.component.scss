@@ -1,0 +1,12 @@
+@import '../../../../../../assets/scss/variables';
+
+.card {
+    border-radius: 12px;
+    border: 1px solid #F1F1F3;
+}
+
+.btn {
+    border-radius: 8px;
+    border: 1px solid $secondary-color;
+    color: $secondary-color;
+}

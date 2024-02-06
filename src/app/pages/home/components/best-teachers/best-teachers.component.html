@@ -1,0 +1,7 @@
+<section class="flex flex-col lg:flex-row items-center justify-between">
+    <div class="w-full">
+        <h3 class="text-3xl md:text-5xl">{{bestTeachers?.title}}</h3>
+        <p class="text-base md:text-xl">{{bestTeachers?.body}}</p>
+    </div>
+        <img class="w-full" [ngSrc]="bestTeachers?.image || 'assets'" width="574" height="744" alt="">
+</section>

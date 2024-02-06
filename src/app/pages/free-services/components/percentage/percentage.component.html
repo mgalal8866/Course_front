@@ -1,0 +1,47 @@
+<div class="percentage container mx-auto p-4">
+
+    <h3 class="text-center text-3xl md:text-4xl lg:text-5xl mb-4">{{'percentage.title' | translate}}</h3>
+    <p class="text-center text-[#1E1E1E] mb-8">{{'percentage.sub_title' | translate}}</p>
+    <p class="text-center text-[#f00] mb-2">{{'percentage.disclaimer_1' | translate}}</p>
+    <p class="text-center text-[#f00] mb-2">{{'percentage.disclaimer_2' | translate}}</p>
+
+    <section class="flex gap-6 flex-col md:flex-row items-center justify-center">
+        <div class="p-4 md:p-8 bg-[#F3F5FB] w-full md:w-[50%] text-[#262A38]">
+            <p class="text-2xl mb-7">{{'percentage.your_percentage' | translate}}</p>
+
+            <app-general-input type="text" formControlName="email" [label]="'percentage.secondary' | translate"
+                placeholder="" [errors]="getControlErrors('email')" [isSubmitted]="isSubmitted"></app-general-input>
+
+            <app-general-input type="text" formControlName="email" [label]="'percentage.abilities' | translate"
+                placeholder="" [errors]="getControlErrors('email')" [isSubmitted]="isSubmitted"></app-general-input>
+
+            <app-general-input type="text" formControlName="email" [label]="'percentage.total' | translate"
+                placeholder="" [errors]="getControlErrors('email')" [isSubmitted]="isSubmitted"></app-general-input>
+        </div>
+
+        <div class="p-4 md:p-8 bg-[#F3FBF4] w-full md:w-[50%] text-[#262A38]">
+            <p class="text-2xl mb-7">{{'percentage.college_percentage' | translate}}</p>
+
+            <app-general-input type="text" formControlName="email" [label]="'percentage.secondary' | translate"
+                placeholder="" [errors]="getControlErrors('email')" [isSubmitted]="isSubmitted"></app-general-input>
+
+            <app-general-input type="text" formControlName="email" [label]="'percentage.abilities' | translate"
+                placeholder="" [errors]="getControlErrors('email')" [isSubmitted]="isSubmitted"></app-general-input>
+
+            <app-general-input type="text" formControlName="email" [label]="'percentage.total' | translate"
+                placeholder="" [errors]="getControlErrors('email')" [isSubmitted]="isSubmitted"></app-general-input>
+
+        </div>
+        
+    </section>
+</div>
+
+<div class="percentage">
+    <div class="flex justify-center">
+        <app-shared-button class="mx-auto mt-4" type="submit" [title]="'percentage.calculate' | translate"> </app-shared-button>
+    </div>
+    
+    <div class="w-full bg-[#F0F0F0] flex justify-center p-3 my-8">
+        <span class="text-xl text-nav-link"> {{'percentage.your_percentage_is' | translate}} </span>
+    </div>
+</div>

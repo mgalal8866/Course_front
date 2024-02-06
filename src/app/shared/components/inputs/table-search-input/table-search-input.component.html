@@ -1,0 +1,11 @@
+<div class="input-container__wrapper">
+  <img src="assets/images/tables/search.svg" />
+
+  <input
+    type="text"
+    class="input-container__wrapper__input"
+    [placeholder]="placeholder"
+    [(ngModel)]="searchTerm"
+    (ngModelChange)="onSearchChange()"
+  />
+</div>

@@ -1,0 +1,19 @@
+<div class="input-container">
+  <input
+    matInput
+    [matDatepicker]="picker"
+    (click)="picker.open()"
+    class="input-container__input"
+    readonly
+    [placeholder]="placeholder"
+    [(ngModel)]="input"
+    (ngModelChange)="onChange($event)"
+    (blur)="onTouched()"
+  />
+  <mat-datepicker #picker></mat-datepicker>
+</div>
+
+<app-validation-errors
+  [isSubmitted]="isSubmitted"
+  [errors]="errors"
+></app-validation-errors>

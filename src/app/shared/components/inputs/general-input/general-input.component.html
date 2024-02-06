@@ -1,0 +1,13 @@
+<div class="input-container" [ngClass]="{
+    'input-container__wrapper-error': isSubmitted && errors,
+    'auth-input': isAuthInput
+  }">
+  <img [src]="icon" *ngIf="icon" />
+  <label class="input-container__label">{{ label }}</label>
+
+  <input #passwordInput class="input-container__input" [type]="type" [placeholder]="placeholder"
+    (keypress)="changedValue($event)" [(ngModel)]="input" (ngModelChange)="onChange($event)" (blur)="onTouched()" />
+</div>
+
+<app-validation-errors [isSubmitted]="isSubmitted" [errors]="errors"
+  [mismatchError]="mismatchError"></app-validation-errors>

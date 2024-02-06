@@ -1,0 +1,11 @@
+<div class="card p-4 bg-white rounded-xl flex flex-col gap-4" >
+    <img [ngSrc]="course.image" class="rounded-lg" width="368" height="241" />
+    <p class=" text-2xl text-nav-black">{{course.name}}</p>
+    <p class=" text-[#959CB1] text-base">{{course.description}}</p>
+    <div class="flex items-center">
+        <img ngSrc="assets/images/courses/calendar.svg" width="20" height="20">
+        <p class="date text-[rgba(42_49_53_0.70)] text-base">{{course.created_at}}</p>
+    </div>
+
+    <button class="w-full p-2 flex items-center justify-center cursor-pointer" (click)="getCourseDetails(course.id)">{{"free_courses.start_now" | translate}}</button>
+</div>

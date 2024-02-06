@@ -1,0 +1,13 @@
+@import '../../../../assets/scss/variables';
+
+button {
+    border-radius: 8px;
+    border: 2px solid $secondary-color;
+    background:#FFF;
+    box-shadow: 4px 4px 0px 0px #DC9521;
+    display: flex;
+    padding: 12px 48px;
+    justify-content: center;
+    align-items: center;
+    color: $secondary-color;
+}

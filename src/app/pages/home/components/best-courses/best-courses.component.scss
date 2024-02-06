@@ -1,0 +1,30 @@
+@import '../../../../../assets/scss/variables';
+
+::ng-deep {
+
+    .course-pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        .swiper-pagination-bullet {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            border: 1px solid $primary-color;
+
+            &.swiper-pagination-bullet-active {
+                border: none;
+                background-color: $primary-color;
+            }
+        }
+    }
+
+    .swiper-button-disabled {
+        opacity: 0.5;
+    }
+}
+
+.buttons{
+    direction: ltr;
+}

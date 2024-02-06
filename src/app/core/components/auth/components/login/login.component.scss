@@ -1,0 +1,77 @@
+@import '../../../../../../assets/scss/variables';
+
+.remember-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-weight: 700;
+
+  &__checkbox {
+    color: $secondary-color;
+    font-family: Almarai;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &__forgot-password {
+    color: $primary-color;
+    font-family: Almarai;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration-line: underline;
+  }
+}
+
+.signup {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  span {
+    color: #4a4a54;
+    font-size: 18px;
+  }
+}
+
+.dont-have-account {
+  color: $nav-black;
+  font-family: Almarai;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+
+  p {
+    margin: 18px 0;
+  }
+}
+
+::ng-deep {
+  .mdc-label {
+    color: $secondary-color;
+    font-family: Almarai;
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
+::ng-deep {
+  app-general-input {
+    .input-container__label {
+      color: $nav-black !important;
+      font-family: Almarai !important;
+      font-size: 12px !important;
+      font-weight: 400 !important;
+    }
+  }
+
+  .create-account-btn {
+    button{
+      background: white !important;
+      height: 56px !important;
+      color: $primary-color !important;
+      border: 1px solid $primary-color !important;
+    }
+  }
+}

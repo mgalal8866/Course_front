@@ -1,0 +1,21 @@
+<section
+    class="rounded-lg flex items-center justify-center gap-2 w-[72px] h-[48px] bg-white flex items-center justify-between">
+    <button mat-button [matMenuTriggerFor]="langMenu"
+        class="text-nav-black text-base flex w-full items-center justify-center gap-2">
+        <img ngSrc="assets/images/nav/arabic.svg" priority width="32" height="24" />
+        <img ngSrc="assets/images/nav/arrow_down.svg" priority width="16" height="16" />
+    </button>
+    <mat-menu #langMenu="matMenu">
+        <button mat-menu-item>
+            <div class="flex items-center justify-between gap-2 w-full mb-2" (click)="langChange.emit('ar')">
+                <span class="text-sm text-primary"> عربي</span>
+                <img ngSrc="assets/images/nav/arabic.svg" priority width="32" height="24" />
+            </div>
+
+            <div class="flex items-center justify-between gap-2 w-full" (click)="langChange.emit('en')">
+                <span class="text-sm text-primary">ِEnglish</span>
+                <img ngSrc="assets/images/nav/arabic.svg" priority width="32" height="24" />
+            </div>
+        </button>
+    </mat-menu>
+</section>

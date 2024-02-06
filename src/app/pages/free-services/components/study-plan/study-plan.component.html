@@ -1,0 +1,30 @@
+<div class="container mx-auto p-4">
+    <h3 class="text-3xl md:text-4xl lg:text-5xl text-center mb-4">{{'study_plan.title' | translate}}</h3>
+    <p class="text-center text-[#1E1E1E] mb-8">{{'study_plan.sub_title' | translate}}</p>
+
+    <div class="wrapper bg-[#F3F5FB] p-8 rounded-2xl max-w-full md:max-w-[80%] lg:max-w-[60%] mx-auto">
+        <app-general-input type="text" formControlName="email" [label]="'study_plan.name' | translate" placeholder=""
+            [errors]="getControlErrors('email')" [isSubmitted]="isSubmitted"></app-general-input>
+
+        <app-general-input type="text" formControlName="email" [label]="'study_plan.phone' | translate" placeholder=""
+            [errors]="getControlErrors('email')" [isSubmitted]="isSubmitted"></app-general-input>
+
+        <app-general-input type="text" formControlName="email" [label]="'study_plan.test_name' | translate"
+            placeholder="" [errors]="getControlErrors('email')" [isSubmitted]="isSubmitted"></app-general-input>
+
+        <app-general-input type="text" formControlName="email" [label]="'study_plan.start_page_number' | translate"
+            placeholder="" [errors]="getControlErrors('email')" [isSubmitted]="isSubmitted"></app-general-input>
+
+
+        <app-general-input type="text" formControlName="email" [label]="'study_plan.end_page_number' | translate"
+            placeholder="" [errors]="getControlErrors('email')" [isSubmitted]="isSubmitted"></app-general-input>
+
+        <app-general-input type="text" formControlName="email" [label]="'study_plan.time' | translate" placeholder=""
+            [errors]="getControlErrors('email')" [isSubmitted]="isSubmitted"></app-general-input>
+
+        <app-general-input type="text" formControlName="email" [label]="'study_plan.date' | translate" placeholder=""
+            [errors]="getControlErrors('email')" [isSubmitted]="isSubmitted"></app-general-input>
+
+        <app-shared-button [title]="'study_plan.send' | translate"></app-shared-button>
+    </div>
+</div>

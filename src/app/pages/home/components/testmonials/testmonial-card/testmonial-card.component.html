@@ -1,0 +1,18 @@
+<div class="card flex flex-col md:p-12">
+    <p class="mb-12">
+        {{user?.text}}
+    </p>
+
+    <div class="user flex justify-between items-center">
+        <div class="flex flex-wrap items-center gap-2">
+
+            <img [ngSrc]="user.user_image || 'assets/images/home/testimonial_user_1.jpg'" width="60" height="60">
+            <span>{{user?.user_name}}</span>
+        </div>
+
+        <div class="btn text-secondary flex items-center justify-center cursor-pointer w-[172px] h-[63px]">
+            {{'testmonials.read_story' | translate}}
+        </div>
+    </div>
+
+</div>

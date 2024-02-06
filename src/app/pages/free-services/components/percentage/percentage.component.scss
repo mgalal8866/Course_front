@@ -1,0 +1,19 @@
+.percentage {
+    ::ng-deep {
+        .input-container {
+            border: 1px solid rgba(42, 49, 53, 0.70) !important;
+        }
+        .input-container__label{
+            margin-inline-start: 40px !important;
+            color: #767680 !important;
+        }
+        app-shared-button{
+            button{
+                @media (max-width: 580px) {
+                    width: 260px;
+                }
+                width: 380px;
+            }
+        }
+    }
+}

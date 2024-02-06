@@ -1,0 +1,53 @@
+@import '../../../../../../assets/scss/variables';
+
+.reset-password {
+  height: 100%;
+
+  &__container {
+    height: 100%;
+
+    @media (max-width: 992px) {
+      height: calc(100% - 24px);
+    }
+  }
+}
+
+.resend {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+
+  .text {
+    color: rgba(248, 166, 30, 0.25);
+    font-family: Almarai;
+    font-size: 16px;
+    font-weight: 700;
+
+    &.active {
+      color: $secondary-color;
+      cursor: pointer;
+    }
+  }
+
+  .time {
+    color: $secondary-color;
+    text-align: right;
+    font-family: Almarai;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration-line: underline;
+  }
+}
+
+::ng-deep {
+  app-general-input {
+    .input-container__label {
+      color: $nav-black !important;
+      font-family: Almarai !important;
+      font-size: 12px !important;
+      font-weight: 400 !important;
+    }
+  }
+}

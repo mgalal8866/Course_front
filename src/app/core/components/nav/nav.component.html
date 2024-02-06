@@ -1,0 +1,64 @@
+<mat-sidenav-container class="sidenav-container" [dir]="$any(dir)">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'">
+    <mat-toolbar>
+      <img width="80" height="68" priority ngSrc="assets/images/nav/logo.svg">
+    </mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item href="#">Link 1</a>
+      <a mat-list-item href="#">Link 2</a>
+      <a mat-list-item href="#">Link 3</a>
+      <button (click)="changeLangage('ar')">Arabic</button>
+      <button (click)="changeLangage('en')">English</button>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar>
+      <div class="container mx-auto flex justify-between w-full">
+
+        <button *ngIf="isHandset$ | async" type="button" aria-label="Toggle sidenav" mat-icon-button class="toggle"
+          (click)="drawer.toggle()">
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+
+        </button>
+        <img width="60" height="48" ngSrc="assets/images/nav/logo.svg">
+
+        <section class="nav w-full flex justify-between items-center px-4 gap-4" *ngIf="!(isHandset$ |async)">
+
+          <div *ngFor="let item of navItems" class="flex items-center">
+            <div *ngIf="item.hasDropdown; then dropdown; else link"></div>
+
+            <ng-template #dropdown>
+              <button mat-button [matMenuTriggerFor]="menu"
+                class="text-nav-black text-base flex items-center justify-center pb-2 cursor-pointer"
+                [disableRipple]="true">{{item.title |
+                translate}}
+                <img ngSrc="assets/images/nav/arrow_down.svg" priority width="16" height="16" />
+              </button>
+              <mat-menu #menu="matMenu">
+                <button [routerLink]="item.route" mat-menu-item *ngFor="let item of item.navItems; let i = index">{{item.title |
+                  translate}}</button>
+              </mat-menu>
+            </ng-template>
+
+            <ng-template #link>
+              <a [routerLink]="item.route" routerLinkActive="active"
+                class="text-nav-black text-base nav-item py-2 cursor-pointer"> {{item.title |
+                translate}}
+              </a>
+            </ng-template>
+          </div>
+
+          <app-search-box></app-search-box>
+          <app-language (langChange)="changeLangage($event)"></app-language>
+          <app-shared-button routerLink="/auth/login" title="تسجيل الدخول"></app-shared-button>
+        </section>
+
+        <img *ngIf="isHandset$ |async" ngSrc="assets/images/nav/mobile-search.svg" width="24" height="24">
+      </div>
+    </mat-toolbar>
+
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>

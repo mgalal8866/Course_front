@@ -1,0 +1,16 @@
+{ 
+   "nav":{
+      "home": "الرئيسية",
+      "courses": "الدورات",
+      "level_test": "اختبار تحديد المستوي",
+      "competitions": "المسابقات",
+      "free_services": "خدمات مجانية",
+      "join_marketers_team": "انضم إلى فريق المسوقين"
+   },
+
+   "footer": {
+      "about_platform": "عن المنصة",
+      "fast_links": "روابط سريعة",
+      "contact_us": "تواصل معنا"
+   }
+}

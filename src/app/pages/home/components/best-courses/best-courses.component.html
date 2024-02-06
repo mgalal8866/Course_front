@@ -1,0 +1,34 @@
+<section class="bg-[#F2F5F9]">
+    <div class="container mx-auto p-4 md:p-16">
+        <h3 class="mb-6 text-2xl md:text-3xl font-bold">{{bestCoursesData?.title}}</h3>
+        <swiper-container init="false" class="courses text-white" pagination="true" pagination-clickable="true">
+            <swiper-slide *ngFor="let item of bestCoursesData?.category" class="slide cursor-pointer">
+                <app-course-slide [course]="item"></app-course-slide>
+            </swiper-slide>
+
+        </swiper-container>
+
+        <div class="flex justify-between items-center mt-16 courses">
+
+            <div class="flex items-center">
+                <div class="buttons flex justify-center gap-1">
+                    <div class="button course-button-next-unique">
+                        <img ngSrc="assets/images/home/next.svg" width="42" height="42">
+                    </div>
+
+                    <div class="button course-button-prev-unique">
+                        <img ngSrc="assets/images/home/prev.svg" width="42" height="42">
+                    </div>
+                </div>
+
+                <p class="mx-2">
+                    <span class="text-3xl md:text-5xl text-secondary">{{currentIndex}}</span>
+                    <span class="text-base md:text-3xl text-nav-black mx-2">/</span>
+                    <span class="text-base md:text-3xl text-nav-black">{{bulletsCount}}</span>
+                </p>
+            </div>
+
+            <div class="course-pagination md:flex-1"></div>
+        </div>
+    </div>
+</section>

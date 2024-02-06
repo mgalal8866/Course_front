@@ -1,0 +1,46 @@
+<section class="flex flex-col lg:flex-row justify-between items-center gap-8">
+
+    <div class="w-full mt-6 lg:mt-0 order-[2] lg:order-[0] lg:w-[50%]">
+
+        <h3 class="mb-2 text-3xl md:text-4xl lg:text-5xl text-black">{{heroSectionData?.title}}</h3>
+        <p class="mb-4 text-[#19458E] text-2xl md:text-lg">{{heroSectionData?.sub_title}}</p>
+        <p class="text-base md:text-xl mb-8">{{heroSectionData?.body}}</p>
+        <app-secondary-button [title]="'buttons.start_free' | translate"></app-secondary-button>
+    </div>
+
+    <div class="w-full lg:w-[50%] relative carousel-container">
+
+        <swiper-container init="false" class="hero text-white" pagination="true" pagination-clickable="true">
+            <swiper-slide *ngFor="let item of heroSectionData?.slider" class="slide cursor-pointer">
+                <img class="slide-img" priority [ngSrc]="item.image" height="333" width="374" />
+            </swiper-slide>
+
+        </swiper-container>
+
+        <div class="flex justify-between items-center hero mt-16">
+            <div class="flex items-center">
+                <div class="buttons flex  justify-center gap-1">
+                    <div class="button team-button-next-unique">
+                        <img ngSrc="assets/images/home/next.svg" width="42" height="42">
+                    </div>
+
+                    <div class="button team-button-prev-unique">
+                        <img ngSrc="assets/images/home/prev.svg" width="42" height="42">
+                    </div>
+                </div>
+
+                <p class="mx-2">
+                    <span class="text-3xl md:text-5xl text-secondary">{{currentIndex}}</span>
+                    <span class="text-base md:text-3xl text-nav-black mx-2">/</span>
+                    <span class="text-base md:text-3xl text-nav-black">{{bulletsCount}}</span>
+                </p>
+            </div>
+
+            <div class="pagination md:flex-1"></div>
+        </div>
+
+
+    </div>
+
+
+</section>

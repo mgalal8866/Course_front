@@ -1,0 +1,17 @@
+<section class="reset-password">
+  <div class="reset-password__container my-6 md:my-10">
+
+    <form [formGroup]="codeForm" (ngSubmit)="submit()">
+      <app-general-input type="text" formControlName="code" [label]="'auth.forgot.enter_code_title' | translate"
+        placeholder="C3KC99" icon="assets/images/auth/icons/user.svg" [errors]="getControlErrors('code')"
+        [isSubmitted]="isSubmitted"></app-general-input>
+
+      <div class="resend mb-12">
+        <p class="text" [ngClass]="{'active': !disabled}">{{'auth.forgot.resend' | translate}}</p>
+        <span class="time">{{ transform(counter) }} {{'auth.forgot.rest' | translate}}</span>
+      </div>
+
+      <app-auth-button type="submit" [title]="'auth.sign_in' | translate"> </app-auth-button>
+    </form>
+  </div>
+</section>

@@ -1,0 +1,116 @@
+{
+   "nav": {
+      "home": "الرئيسية",
+      "courses": "الدورات",
+      "level_test": "اختبار تحديد المستوي",
+      "competitions": "المسابقات",
+      "search_placeholder": "عما تبحث؟...",
+      "free_services": {
+         "title": "خدمات مجانية",
+         "item_1": "قدرات عامة",
+         "item_2": "جدول المذاكرة",
+         "item_3": "النسبة الموزونة"
+      },
+      "join_marketers_team": "انضم إلى فريق المسوقين"
+   },
+   "join": {
+      "join_button": "اتصل بنا"
+   },
+   "testmonials": {
+      "read_story": "اقرأ القصة كاملة"
+   },
+   "articles": {
+      "read_more": "اقرأ المقال"
+   },
+   "footer": {
+      "about_platform": "عن المنصة",
+      "fast_links": "روابط سريعة",
+      "contact_us": "تواصل معنا",
+      "about_us": "من نحن",
+      "team_work": "فريق العمل",
+      "common_questions": "الأسئلة الشائعة",
+      "usage_privacy": "شروط الاستخدام والخصوصية",
+      "blog": "المدونة",
+      "address": "العنوان "
+   },
+   "best_courses": {
+      "count": "دورات"
+   },
+   "buttons": {
+      "start_free": "ابدأ مجانًا"
+   },
+   "auth": {
+      "login": "تسجيل الدخول لحسابك",
+      "welcome_back": "مرحبًا بعودتك! يرجي إدخال بياناتك",
+      "email": "البريد الإلكتروني",
+      "password": "كلمة المرور",
+      "write_here": "اكتب هنا...",
+      "remember_me": "تذكر بياناتي",
+      "forgot_password_question": "هل نسيت كلمة المرور؟",
+      "sign_in": "تسجيل الدخول",
+      "dont_have_account": "ليس لديك حساب؟",
+      "create_new_account": "تسجيل حساب جديد",
+      "sign_up": {
+         "title": "قم بتسجيل حساب جديد",
+         "sub_title": "مرحبًا بك! يرجي إدخال بياناتك",
+         "register_new_account": "تسجيل حساب جديد",
+         "confirm_password": "تأكيد كلمة المرور",
+         "create_new_account": "تسجيل حساب جديد",
+         "have_account": "لديك حساب؟",
+         "sign_in": "تسجيل الدخول"
+      },
+      "forgot": {
+         "title": "نسيت كلمة المرور؟",
+         "sub_title": "أدخل إيميلك لتصلك رسالة تأكيد",
+         "send_otp": "ارسال رسالة تأكيد",
+         "six_digits": "أدخل الكود المكون من 6 خانات",
+         "enter_code_title": "ادخل الكود",
+         "rest": "متبقي",
+         "resend": "إعادة إرسال",
+         "new_password": "أدخل كلمة مرور جديدة قوية مكونة من أحرف وأرقام ورموز",
+         "new_password_label": ""
+      }
+   },
+   "free_services": {
+      "breadcrumb": "خدمات مجانية"
+   },
+   "general_services": {
+      "breadcrumb": "قدرات عامة"
+   },
+   "study_plan": {
+      "breadcrumb": "جدول المذاكرة",
+      "title": "جدول المذاكرة",
+      "sub_title": "أنشىء جدول المذاكرة الخاص بك",
+      "name": "اسم الطالب / الطالبة",
+      "phone": "رقم الجوال بدون الصفر ( واتساب )",
+      "test_name": "رقم الجوال بدون الصفر ( واتساب )",
+      "start_page_number": "رقم صفحة بداية المذاكرة",
+      "end_page_number": "رقم صفحة نهاية المذاكرة",
+      "time": "أختار المده الزمنية ( بالايام )",
+      "date": "تاريخ بداية المذاكرة",
+      "send": "ارسال"
+   },
+   "percentage": {
+      "breadcrumb": "النسبة الموزونة",
+      "title": "النسبة الموزونة",
+      "sub_title": "احسب نسبتك الموزونة",
+      "disclaimer_1": "(إذا كان التحصيلي غير مطلوب ، اتركه فارغًا)",
+      "disclaimer_2": "النسب المحددة من الجامعة يجب أن يكون مجموعها = 100",
+      "your_percentage": "اكتب نسبتك",
+      "college_percentage": "النسب المحددة من الجامعة",
+      "secondary" : "الثانوية",
+      "abilities": "القدرات",
+      "total": "التحصيلى",
+      "calculate": "احسب",
+      "your_percentage_is": "نسبتك الموزونة هي "
+   },
+   "free_courses": {
+      "title": "شروحات مجانية",
+      "sub_title": "استمتع بمحتوي مجانى لاختبار قدراتك واستكشاف بعض المهارات",
+      "start_now" : "ابدأ الآن"
+   },
+   "validations": {
+      "required": "هذا الحقل مطلوب",
+      "valid_email": "برجاء ادخال ايميل صالح"
+   }
+}

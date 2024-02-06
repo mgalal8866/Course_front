@@ -1,0 +1,22 @@
+@import '../../../../../assets/scss/variables';
+::ng-deep{
+    .mat-mdc-tab-group.mat-mdc-tab-group-stretch-tabs>.mat-mdc-tab-header .mat-mdc-tab{
+        flex-grow: unset !important;
+    }
+
+    .mat-mdc-tab.mdc-tab--active .mdc-tab__text-label{
+        color: $nav-black !important;
+    }
+
+    .mat-mdc-tab-labels{
+        justify-content: center;
+    }
+    
+    .mat-mdc-tab .mdc-tab__text-label{
+        color: $nav-black !important;
+    }
+
+    .mat-mdc-tab.mdc-tab--active .mdc-tab__text-label{
+        font-weight: bold;
+    }
+}
